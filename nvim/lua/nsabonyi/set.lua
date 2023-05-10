@@ -26,5 +26,7 @@ vim.opt.updatetime = 50
 
 vim.opt.scroll = 10
 
+vim.wo.cursorline = true
+
 --vim.opt.colorcolumn = "80"
 
