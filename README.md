@@ -36,3 +36,35 @@ In the archive there are plenty of fonts, however you only need a few:
 - JetBrainsMono-BoldItalic.ttf
 
 Set them in your favourite terminal emulator.
+
+### Recommended emulator
+I recommend to use Alacritty with tmux.
+
+Alacritty configuration (~/alacritty.yml):
+```
+font:
+  normal:
+    #family: Hack Nerd Font
+    family: JetBrains Mono
+    #family: Fira Code
+    style: Regular
+
+  bold:
+    family: Hack Nerd Font
+    style: Bold
+
+  italic:
+    family: Hack Nerd Font
+    style: Italic
+
+  bold_italic:
+    family: Hack Nerd Font
+    style: Bold Italic
+
+  size: 13
+```
+
+When using tmux we may need to fix the color scheme depending on the emulator. In case of Alacritty
+we can fix the scheme by adding `set-option -a terminal-overrides ",alacritty:RGB"` to `~/.config/tmux/tmux.conf` file. 
+
+It is also advised to enable mouse in tmux: `set -g mouse on`
