@@ -43,11 +43,11 @@ return require('packer').startup(function(use)
 ---------------------------------------
   --https://github.com/hrsh7th/nvim-cmp
   -- LSP
-  --use 'williamboman/mason.nvim'
-  use {
-      "williamboman/mason.nvim",
-      run = ":MasonUpdate" -- :MasonUpdate updates registry contents
-  }
+  use 'williamboman/mason.nvim'
+--  use {
+--      "williamboman/mason.nvim",
+--      run = ":MasonUpdate" -- :MasonUpdate updates registry contents
+--  }
   use 'mfussenegger/nvim-jdtls'
 
   -- Autocompletion

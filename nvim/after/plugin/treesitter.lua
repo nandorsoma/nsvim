@@ -1,7 +1,7 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
   -- vim is needed when there are vim.* lines in neovim lua config files
-  ensure_installed = { "java", "vim", "lua", "help"},
+  ensure_installed = { "java", "vim", "lua", "vimdoc"},
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
