@@ -37,7 +37,7 @@ In the archive there are plenty of fonts, however you only need a few:
 
 Set them in your favourite terminal emulator.
 
-### Recommended emulator
+### Recommended terminal emulator
 I recommend to use Alacritty with tmux.
 
 Alacritty configuration (~/alacritty.yml):
@@ -63,8 +63,20 @@ font:
 
   size: 13
 ```
+#### Tmux
+I recommend using tmux for tab and split screen support.
 
-When using tmux we may need to fix the color scheme depending on the emulator. In case of Alacritty
-we can fix the scheme by adding `set-option -a terminal-overrides ",alacritty:RGB"` to `~/.config/tmux/tmux.conf` file. 
+When using tmux we may need to fix the color scheme depending on the emulator.
+
+In case of Alacritty we can fix the scheme by adding `set-option -a terminal-overrides ",alacritty:RGB"` to `~/.config/tmux/tmux.conf` file. 
 
 It is also advised to enable mouse in tmux: `set -g mouse on`
+
+tmux.conf with a few conveniency bindings:
+```
+set-option -a terminal-overrides ",alacritty:RGB"
+set -g mouse on
+
+bind '"' split-window -c "#{pane_current_path}"
+bind % split-window -h -c "#{pane_current_path}"
+```
