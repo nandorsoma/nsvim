@@ -40,25 +40,28 @@ Set them in your favourite terminal emulator.
 ### Recommended terminal emulator
 I recommend to use Alacritty with tmux.
 
-Alacritty configuration (~/alacritty.yml):
+```
+brew install --cask alacritty
+```
+
+Alacritty configuration (~/.config/alacritty.yml):
 ```
 font:
   normal:
     #family: Hack Nerd Font
     family: JetBrains Mono
-    #family: Fira Code
     style: Regular
 
   bold:
-    family: Hack Nerd Font
+    family: JetBrains Mono
     style: Bold
 
   italic:
-    family: Hack Nerd Font
+    family: JetBrains Mono
     style: Italic
 
   bold_italic:
-    family: Hack Nerd Font
+    family: JetBrains Mono
     style: Bold Italic
 
   size: 13
