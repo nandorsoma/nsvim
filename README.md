@@ -44,27 +44,26 @@ I recommend to use Alacritty with tmux.
 brew install --cask alacritty
 ```
 
-Alacritty configuration (~/.config/alacritty.yml):
+Alacritty configuration (~/.config/alacritty.toml):
 ```
-font:
-  normal:
-    #family: Hack Nerd Font
-    family: JetBrains Mono
-    style: Regular
+[font]
+size = 13
 
-  bold:
-    family: JetBrains Mono
-    style: Bold
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
 
-  italic:
-    family: JetBrains Mono
-    style: Italic
+[font.bold_italic]
+family = "JetBrains Mono"
+style = "Bold Italic"
 
-  bold_italic:
-    family: JetBrains Mono
-    style: Bold Italic
+[font.italic]
+family = "JetBrains Mono"
+style = "Italic"
 
-  size: 13
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
 ```
 #### Tmux
 I recommend using tmux for tab and split screen support.
